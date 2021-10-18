@@ -1,13 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+
+import New from './New';
+import Newcls from './Newcls';
+import Clickevntfun from './Clickevntfun';
 import reportWebVitals from './reportWebVitals';
+import Updatevnt from './Updatevnt';
+import Propfunc from './Propfunc';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+
+    <Clickevntfun />
+    <Updatevnt />
+    <Propfunc name={"bharti"} />
+    {/* <Propfunc name={"arya"} email="bharti@webi.com " other={{address:'burhanpur', mobile:"7225038682"}} />
+    <Propfunc name={"gayu"} email="bharti@webi.com " other={{address:'burhanpur', mobile:"7225038682"}}  />
+    <Propfunc name={"prachi"} email="bharti@webi.com " other={{address:'burhanpur', mobile:"7225038682"}}  /> */}
+
   </React.StrictMode>,
+
+
   document.getElementById('root')
 );
 
