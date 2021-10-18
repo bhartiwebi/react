@@ -8,12 +8,19 @@ import Clickevntfun from './Clickevntfun';
 import reportWebVitals from './reportWebVitals';
 import Updatevnt from './Updatevnt';
 import Propfunc from './Propfunc';
+import Hideshow from './Hide&show';
+import Basic_form from './Basic_form';
+import Condition from './Condition';
 
 ReactDOM.render(
   <React.StrictMode>
 
+    <Hideshow />
     <Clickevntfun />
     <Updatevnt />
+    <Basic_form />
+    <Condition />
+
     <Propfunc name={"bharti"} />
     {/* <Propfunc name={"arya"} email="bharti@webi.com " other={{address:'burhanpur', mobile:"7225038682"}} />
     <Propfunc name={"gayu"} email="bharti@webi.com " other={{address:'burhanpur', mobile:"7225038682"}}  />
