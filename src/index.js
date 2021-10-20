@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import { BrowserRouter } from 'react-router-dom';
 
 import New from './New';
 import Newcls from './Newcls';
@@ -11,17 +12,43 @@ import Propfunc from './Propfunc';
 import Hideshow from './Hide&show';
 import Basic_form from './Basic_form';
 import Condition from './Condition';
+import Condition3 from './Condition3';
+import Child from './Child';
+import Lifecycle from './Lifecycle';
+import Bootstrap from './Bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import App from './App';
+import Contact from './Contact';
+import About from './About';
+import Class from './Class';
 
+
+function getData() {
+  alert("hello...I'm comming from parent component")
+
+}
 ReactDOM.render(
   <React.StrictMode>
 
+    <BrowserRouter>
+      <App />
+
+    </BrowserRouter>
+   
+    {/* <Basic_form /> */}
+    {/* 
+<Newcls />
+<Bootstrap />
+    <Lifecycle />
     <Hideshow />
     <Clickevntfun />
     <Updatevnt />
     <Basic_form />
     <Condition />
+    <Condition3 />
+    <Child data={getData} />
 
-    <Propfunc name={"bharti"} />
+    <Propfunc name={"bharti"} email="bharti@webi.com " /> */}
     {/* <Propfunc name={"arya"} email="bharti@webi.com " other={{address:'burhanpur', mobile:"7225038682"}} />
     <Propfunc name={"gayu"} email="bharti@webi.com " other={{address:'burhanpur', mobile:"7225038682"}}  />
     <Propfunc name={"prachi"} email="bharti@webi.com " other={{address:'burhanpur', mobile:"7225038682"}}  /> */}

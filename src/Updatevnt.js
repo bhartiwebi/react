@@ -1,5 +1,5 @@
 import {useState} from "react";
-
+import './App.css'
 
 function Updatevnt(){
 
@@ -18,8 +18,8 @@ function Updatevnt(){
 //    }
     // console.log("_____");
     return(
-        <div>
-            {/* <h2>{data}</h2> */}
+        <div className="App" style={{backgroundColor: "aquamarine"}}>
+           <h3>Update Event</h3>
             <h3>{data}</h3>
             <button onClick={updatedata}>update</button>
         </div>

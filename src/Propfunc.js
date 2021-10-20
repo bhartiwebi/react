@@ -1,10 +1,13 @@
+import './App.css'
+
 function Propfunc(props) {
     console.warn(props)
     return (
-        <div style={{ backgroundColor: "pink" }}>
+        <div className="App" style={{ backgroundColor: "pink" }}>
+            <h2>Prop Function</h2>
             <p>Hello : {props.name}</p>
-            {/* <h2>email : {props.email}</h2>
-            <h3>address : {props.other.address}</h3> */}
+            <p>email : {props.email}</p>
+            {/* <h3>address : {props.other.address}</h3> */}
 
         </div>
     )

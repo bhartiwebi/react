@@ -1,19 +1,20 @@
 
 import React from 'react';
+import './App.css'
 function Hideshow() {
     const [status, setStatus] = React.useState(true)
     return (
 
-        <div style={{margin:10}}>
+        <div className="App" style={{ backgroundColor: "aqua" }}>
 
             {
-                status ? <h3>Jay mata dii</h3> : null
+                status ? <h3>Hide & Show</h3> : null
             }
 
             {/* <button onClick={() => setStatus(false)}>hide</button>
             <button onClick={() => setStatus(true)}>show</button> */}
 
-<button onClick={()=>setStatus(!status)}>toggle</button>
+            <button onClick={() => setStatus(!status)}>toggle</button>
 
         </div>
     )
