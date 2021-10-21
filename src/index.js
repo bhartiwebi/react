@@ -21,12 +21,19 @@ import App from './App';
 import Contact from './Contact';
 import About from './About';
 import Class from './Class';
+import Fragment from './Fragment';
+import Child1 from './Child1';
+import DataFetching from './DataFetching';
 
 
 function getData() {
   alert("hello...I'm comming from parent component")
 
+  
+  
+
 }
+
 ReactDOM.render(
   <React.StrictMode>
 
@@ -34,10 +41,13 @@ ReactDOM.render(
       <App />
 
     </BrowserRouter>
+    {/* <DataFetching /> */}
+    {/* <Child name={getData}/> */}
+    {/* <Child1 /> */}
    
     {/* <Basic_form /> */}
-    {/* 
-<Newcls />
+    
+{/* <Newcls />
 <Bootstrap />
     <Lifecycle />
     <Hideshow />
@@ -46,7 +56,7 @@ ReactDOM.render(
     <Basic_form />
     <Condition />
     <Condition3 />
-    <Child data={getData} />
+  
 
     <Propfunc name={"bharti"} email="bharti@webi.com " /> */}
     {/* <Propfunc name={"arya"} email="bharti@webi.com " other={{address:'burhanpur', mobile:"7225038682"}} />
