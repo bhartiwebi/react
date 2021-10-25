@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios';
+import { Table } from 'react-bootstrap'
 
 function DataFetching() {
     const [posts, setPosts] = useState([])
 
     useEffect(() => {
-        axios
-            .get('https://jsonplaceholder.typicode.com/posts')
+        axios.get('https://jsonplaceholder.typicode.com/posts')
             .then(res => {
                 console.log(res)
                 setPosts(res.data)
@@ -17,32 +17,38 @@ function DataFetching() {
             })
     }, [])
     return (
-        <div>
+        <div Class="container">
             <ul>
-                <table>
+                <Table striped bordered hover>
+                    <thead>
+                        <tr>
+                            <td>ID</td>
+                            <td>Title</td>
+                            <td>Body</td>
 
-                <tr>
-                        <td>ID</td>
-                       <td>Title</td>
-                       <td>Body</td>
+                        </tr>
+                    </thead>
+                    {
+                        posts.map((post) =>
 
-                    </tr>
-                {
-                    posts.map((post)=>
-                    <tr>
-                        <td>{post.id}</td>
-                       <td>{post.title}</td>
-                       <td>{post.body}</td>
+                            <tbody>
+                                <tr>
 
-                    </tr>
-                    )
-                    // posts.map(post => (
-                        
-                    // <tr key={post.id}>{post.title}{post.body}</tr>
+                                    <td>{post.id}</td>
+                                    <td>{post.title}</td>
+                                    <td>{post.body}</td>
 
-                    // ))
-                }
-                </table>
+                                </tr>
+                            </tbody>
+                        )
+                        // posts.map(post => (
+
+                        // <tr key={post.id}>{post.title}{post.body}</tr>
+
+                        // ))
+                    }
+
+                </Table>
             </ul>
         </div>
     )

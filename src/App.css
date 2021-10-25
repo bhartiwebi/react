@@ -7,6 +7,19 @@
   pointer-events: none;
 }
 
+/*  */
+.cart-wrapper {
+  width: 100
+px
+;
+  height: 120
+px
+;
+  border: 1
+px
+solid;
+}
+/*  */
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

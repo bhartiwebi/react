@@ -24,13 +24,15 @@ import Class from './Class';
 import Fragment from './Fragment';
 import Child1 from './Child1';
 import DataFetching from './DataFetching';
+import Bharti from './Bharti';
+import HomeContainer from './containers/HomeContainer';
 
 
 function getData() {
   alert("hello...I'm comming from parent component")
 
-  
-  
+
+
 
 }
 
@@ -41,13 +43,16 @@ ReactDOM.render(
       <App />
 
     </BrowserRouter>
+    {/* <HomeContainer /> */}
+    {/* <Bharti data={{ name: 'arya', age: '24' }} /> */}
+    
     {/* <DataFetching /> */}
     {/* <Child name={getData}/> */}
     {/* <Child1 /> */}
-   
+
     {/* <Basic_form /> */}
-    
-{/* <Newcls />
+
+    {/* <Newcls />
 <Bootstrap />
     <Lifecycle />
     <Hideshow />

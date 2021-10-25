@@ -9,6 +9,8 @@ import { Route, Switch, Redirect, Link, Router } from 'react-router-dom'
 import Chil from './Chil';
 import Api from './Api';
 import DataFetching from './DataFetching';
+import Bharti from './Bharti';
+
 
 function App() {
 // parent to child => let data = "bharti"
@@ -29,6 +31,7 @@ function parantalert(data){
 
 
       <div>
+        
       {/* parent to child   <Child1 name={data}/> */}
       {/* child to parent => <Child1 alert={parantalert}/> */}
       {/* <Child1 alert={parantalert}/>
